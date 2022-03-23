@@ -34,6 +34,9 @@ jobs:
     - name: Verify Java version
       run: echo -e "Actual JDK in use -- "; java -version
 
+    - name: Check git version
+      run: echo -e "Git version in use -- "; git --version
+
     - name: Set up Node.js
       uses: actions/setup-node@v1
       with:
